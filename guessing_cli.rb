@@ -5,4 +5,4 @@ def run_guessing_game
   
   # campare input to random number
   
-  # pr
+  # if correct, puts 

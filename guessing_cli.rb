@@ -6,3 +6,4 @@ def run_guessing_game
   # campare input to random number
   
   # if correct, puts 
+end

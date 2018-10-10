@@ -3,15 +3,19 @@
 def run_guessing_game
   while true
     puts 'Guess a number between 1 and 6.'
-    # take input from command line 
     command = gets.chomp
+    
     # check for exit
-    if command.lower.gsub(/\W+/, '') == 'exit'
+    break if command.lower.gsub(/\W+/, '') == 'exit'
+    
     # campare input to random number
     r_num = rand(1..6)
-      # if correct, puts 'You guessed the correct number!'
-      
-      # otherwise, puts 'The computer guessed 5.'
+    if command == r_num
+      puts 'You guessed the correct number!'
+    else
+      puts "The computer guessed #{r_num}."
+    end
     
   end
+  puts 'Goodbye!'
 end

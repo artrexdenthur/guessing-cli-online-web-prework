@@ -7,5 +7,5 @@ def run_guessing_game
     command = gets.chomp
     # campare input to random number
     r_num = rand(1..6)
-    # if correct, puts 
+      # if correct, puts 
 end

@@ -10,7 +10,7 @@ def run_guessing_game
     break if command.downcase.gsub(/\W+/, '') == 'exit'
     
     # campare input to random number
-    if command == r_num
+    if command.to_i == r_num
       puts 'You guessed the correct number!'
     else
       puts "The computer guessed #{r_num}."

@@ -6,7 +6,7 @@ def run_guessing_game
     # take input from command line 
     command = gets.chomp
     # check for exit
-    if command == 'exit'
+    if command.lower.gsub == 'exit'
     # campare input to random number
     r_num = rand(1..6)
       # if correct, puts 'You guessed the correct number!'

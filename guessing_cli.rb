@@ -6,7 +6,7 @@ def run_guessing_game
     command = gets.chomp
     
     # check for exit
-    break if command.lower.gsub(/\W+/, '') == 'exit'
+    break if command.downcase.gsub(/\W+/, '') == 'exit'
     
     # campare input to random number
     r_num = rand(1..6)
